@@ -2,12 +2,23 @@ package sample;
 
 public class Cat extends Animal {
 
-    public Cat(String name, String ration, String color, int weight) {
-        super(name, ration, color, weight);
+    private String name;
+
+    public Cat(String ration, String color, int weight, String name) {
+        super(ration, color, weight);
+        this.name = name;
     }
 
     public Cat() {
-        super("Cat", "usually meat", "probably opaque", (int) Math.ceil(Math.random() * 400));
+        super("usually meat", "probably opaque", (int) Math.ceil(Math.random() * 400));
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void eat() {
+        System.out.println(getRation());
     }
 
     public String getVoice() {

@@ -2,13 +2,11 @@ package sample;
 
 public class Animal {
 
-    private String name;
     private String ration;
     private String color;
     private int weight;
 
-    public Animal(String name, String ration, String color, int weight) {
-        this.name = name;
+    public Animal(String ration, String color, int weight) {
         this.ration = ration;
         this.color = color;
         this.weight = weight;
@@ -20,8 +18,8 @@ public class Animal {
         this.weight = (int) Math.ceil(Math.random() * 150000);
     }
 
-    public String getName() {
-        return name;
+    public String getRation() {
+        return ration;
     }
 
     public String getVoice() {
@@ -29,7 +27,7 @@ public class Animal {
     }
 
     public void eat() {
-        System.out.println(ration);
+
     }
 
     public void sleep() {
@@ -37,7 +35,7 @@ public class Animal {
     }
 
     public String toString() {
-        return "Animal " + name + " [eat = " + ration + ", color = " + color + ", weight = " + weight + " kg]";
+        return "Animal [eat = " + ration + ", color = " + color + ", weight = " + weight + " kg]";
     }
 
 }

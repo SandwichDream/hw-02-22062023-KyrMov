@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Cat cat1 = new Cat("Shtooka", "feed", "gray", 3);
-        Dog dog1 = new Dog("Chuck", "feed", "red", 33);
+        Cat cat1 = new Cat("feed", "gray", 3, "Shtooka");
+        Dog dog1 = new Dog("feed", "red", 33, "Chuck");
         Dog dog2 = new Dog();
         Veterinarian person1 = new Veterinarian("Bill");
 
